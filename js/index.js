@@ -6,7 +6,9 @@ const copyright = document.createElement('p');
 // copyright.innerHTML = ` ${myName} &copy ${thisYear}`;
 copyright.innerHTML = ` Oksana Feterovskaya &copy ${thisYear}`;
 footer.appendChild(copyright);
-const skills = ['HTML', 'CSS', 'JavaScript', 'Adobe Visual', 'AdobePhotoshop', 'AdobeIllustrator', 'UI/UX','Wordpress'];
+
+//add skills section
+const skills = ['HTML', 'CSS', 'JavaScript','Git Hub', 'UI/UX','Wordpress','Adobe Visual', 'Adobe Photoshop', 'Adobe Illustrator', ];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector('ul');
 for (let i = 0; i < skills.length; i++){

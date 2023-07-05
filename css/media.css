@@ -1,0 +1,104 @@
+@media(max-width: 480px){
+    body{
+        font-size: 12px;
+    }
+    #header, #navbar{
+        display:flex;
+        flex-direction: column;       
+    } 
+    #navbar {
+        height: 100%;                
+    }
+    #navbar li{
+        display:block;
+        border-bottom: 1px solid #a9a923;
+                            
+    }
+    #navbar a {
+        padding-left: 0.25rem;
+        font-size: 12px;
+    } 
+    section img{
+       border-radius: 5px;
+        width: 25%;
+        height: auto; 
+    }
+    /*  DOESN"T WORK!!!!.section1{
+        margin-top:50%;
+    }*/
+   
+    #text{
+        font-size: 18px;
+        margin-left: 0.5rem;
+    }
+    section p{
+        padding-bottom: 1rem;        
+        margin-right:10% ;
+    }
+    .grid-container {
+        display: grid;
+        row-gap: 0.5rem;    
+      }
+    #experience{
+        display: block;
+        padding: 0.25rem;
+        margin: 0.25rem 1rem 0 0.5rem ;
+        width: 90%;       
+    }
+    .skillsBox li{
+        font-size: 12px;
+        text-align: center;
+    }
+    #messagesForm input {       
+       
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+    #messagesForm textarea {
+        margin-bottom: 0.25em;  
+        padding: 0.25rem;  
+        font-size: 12px;
+    
+    }
+  } 
+@media(max-width: 769px){
+    #header, #navbar{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    #header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar {
+        height: 100%;  
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;         
+    }
+    #navbar li{
+        border-bottom: 1px solid #a9a923;
+        padding-bottom: 0.5rem;                
+    }
+    #navbar a {
+        padding-left: 0.25rem;
+        font-size: 14px;
+    }
+    .section1{
+        margin-top:45%;
+    }
+    img{
+        display:block;
+        width:fit-content;
+    }
+}
+@media(min-width: 1025px){
+    #navbar a {
+        padding-left: 0.25rem;
+        font-size: 14px;
+    }
+    .section1{
+        margin-top:15%;
+    }
+}
