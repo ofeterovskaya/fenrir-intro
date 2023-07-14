@@ -1,107 +1,82 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 body {
-    background-color:#f2f2f2ea;
+    color: #333333;
     font-family: 'Roboto Slab', serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-   
-} 
-/*all text goes to left a little bit*/
-body section p{
-margin-left: 2%;
+    line-height: 1.6;  
+    background-color:#f2f2f2ea;
 }
-/* header and navigation bar*/
-nav{
-    background-color: #e1e16b;
-    color: #333333;    
-    display: block;
-    width: 100%;
-    justify-content: left;
-    position: fixed;
-    top: 0;
+.container {   
+    padding-left: 1em;
+    padding-left: 1em; 
+    align-content: center;
 }
-nav h1, h4{
-    font-family: 'Noto Serif', serif;   
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+a {
+    text-decoration: none;
 }
-#navbar{   
-    background-color: #333333;
-    width: 100%;
-    height: 3rem;  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;    
- }
- 
- #navbar li{
-    padding-top: 1rem;
-    border-left: 1px solid #a9a923;
-    display: inline;
-    width: 100%;
- }
- /*#navbar li:last-child{
-    border: none;
-}*/
-#navbar a {   
-    color: #e1e16b;
-    text-align: center;
-    padding-right: 5rem;
-    padding-left: 5rem;
-    text-decoration: none;   
-}
-/*all text on the page*/
-#text {
-    color: #a9a923;
+h2 {
+    color: #b0b015;;
     font-family: 'Neuton', serif;
     line-height: 200%;
     margin-bottom: 1rem;    
 }
-section{
-    margin-left: 1.5rem;
-    margin-top:3%;
+/* header and navigation bar*/
+/*sticky nav bar*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-/*only 1st section because sticky navbar need space on top
-.section1{
-    margin-top: 2%;
-}*/
-section p{
-    line-height: 200%;
-    padding-bottom: 1rem;
+nav {
+    background-color: #e1e16b;
 }
-/*#experience{
-    display: block;
-    padding: 0.5rem;
-    margin-top: 1.5rem;
+#header h1, h4 {
+    font-family: 'Noto Serif', serif;   
+    text-align: center;    
+}
+#navbar{   
+    background-color:  #555653;    
+}
+#navbar li {
+    border-left: 1px solid #a9a923;
+    display: inline;
+    width: 100%;
+ }
+#navbar a {   
+color: #f9f92f;   
+}
+/*all content on the page*/
+#section1 img {
+    box-shadow: 10px 5px 10px#8f8f8f;
+    margin: 0.5em;
+    border-radius: 50px;
     margin-right: 50px;
-    border: 1px;
-    border-style: double;
-    border-radius: 10px;
-    border-color:#a9a923;
-    color: #333333;    
 }
-.years{
+#experience , #section1, #skills, #connect, #messagesForm, #messages{
+    padding-top: 3rem; 
+}
+#skills {
+    margin-top: 1rem;
+}
+.years {
     float: right;
-}*/
+}
 /*Experience section change from  li to display grid*/
 .grid-container {
     display: grid;
     row-gap: 2rem;    
-  }
-#experience{
+}
+.grid-container p{
     display: block;
     padding: 0.75rem;
     margin: 0.5rem 2rem 0 2.5rem ;
     border: 1px double #a9a923;
     border-radius: 10px;
     color:  #333333;  
-}
+}  
 /*Skills section*/
 .skillsBox li{
     display: inline-flex;
@@ -109,60 +84,50 @@ section p{
     flex-wrap: wrap;
     padding: 0.5rem;
     border: 1px solid #a9a923;  
-    margin-left: 2rem;
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 5px#bfbfbf;
     width: 10em;
-    text-align: center;
+    text-align: center;    
 }
 .skillsBox li:hover{
-    background-color: #333333;
+    background-color: #555653;
     color:#e1e16b;
 }
 /*Connect section*/
+
 #connect li{
-    margin-left: 2rem;
     list-style: none;
-    padding: 0.5rem
+    padding: 0.5rem;
 }
 a{
     text-decoration: none;
     color: #000000;
 }
 a:hover{
-    background-color: #333333;
+    background-color: #555653;
     color:#e1e16b;
 }
 /*Leave a message form*/
 #messagesForm form{
     margin-left: 2%;
 }
-.flex-container{
-    display: flex;
-    flex-wrap: wrap; 
-}
-.flex-name , .flex-email, .flex-message {
-    margin-right: 2rem;
-    margin-bottom: 0.75rem;
-    flex: 100%;
-}
-
 #messagesForm input {       
     border-radius:5px;
     border: 1px solid; 
-    margin-bottom: 0.5em;
-    font-size: 14px;
-    padding: 0.5rem;
+    margin-bottom: 0.5em;    
 }
 #messagesForm textarea {
     border-radius:5px;
     border: 1px solid; 
-    margin-bottom: 0.5em;  
-    padding: 1rem;  
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-
+    margin-bottom: 0.5em; 
+    padding: 0.5rem;      
+}
+.inputMessage{
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
 }
 #messagesForm button{
     display: block;
@@ -171,43 +136,36 @@ a:hover{
     border: 1px solid; 
     margin-top: 0.5em;
     font-size: 16px;
-    padding: 0.5em;   
-      
-}
+    padding: 0.5em;         
+}   
 /*Messages section*/
 #messagesForm button:hover{
-    background-color: #333333;
+    background-color: #555653;
     color:#e1e16b;
 }
 #messages a {
-    font-weight: bold;
-    letter-spacing: 0.5em;
+    font-weight: bold;    
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    float:left;
 }
 #messages button{
-    margin-left: 2em;
     border-radius:5px;
-    font-size: 14px;
-    padding: 0.5rem;
+    font-size: 14px;     
 }
 #messages button:hover{
     background-color: #5f5e5e;
     color:#f1f10b ;
-}
-/*my photo section*/
-section img{
-    float: right;
-    border-radius: 50px;
-    margin-right: 50px;
-    width: 10%;
-    height: auto; 
-    box-shadow: 10px 5px 10px#8f8f8f;
-}
+} 
 /*footer section*/
-footer{
+footer {
     background-color: #e1e16b;
     font-family: 'Noto Serif', serif;
     text-align: center;
     color: #333333;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1em 0;
 }
+
+
