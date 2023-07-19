@@ -20,29 +20,36 @@
         margin-left: 25%; 
         height: auto;      
     }
-    #header, #navbar {
+     #navbar {
         display:flex;
-        flex-direction: column;       
+        flex-direction: column;
+        height: 100%;       
     } 
-    #navbar {
-        height: 100%;    
+    #header button {
+        color: #f9f92f;  
+        background-color:  #555653; 
+        width: 100%;
     }
-    #navbar li {
-        padding: 0;
-        display:block;
-        border-bottom: 1px solid #a9a923;                 
+    #header button i {
+        padding-left: 1em;
+    }
+    #navbar li {        
+        border-bottom: 1px solid #a9a923;                           
     }
     #navbar a {       
-        font-size: 12px;
+        font-size: 14px;
         padding-left: 3em;
-    } 
+    }    
     .grid-container p {
         padding: 0.5rem;
         margin: 0.25rem;
     }
     .skillsBox li {
         margin-left: 0.25rem;
-    }    
+    }  
+    #projects li:hover {
+        width: 50%;
+    }  
     #messagesForm input {
         width: 80%;
         height: auto;
@@ -54,6 +61,9 @@
         height:auto;
         font-size: 12px; 
         padding: 0.25rem;
+    }
+    #messagesForm button {
+        width:80%;
     }
     footer{
         font-size: 14px;
@@ -89,14 +99,16 @@
        margin-left: 5%;
        height: auto;      
     }
+    #header button {
+        font-size: 1.5rem;
+    }
     #navbar li {
-        padding: 0.25em 0 0.25em 0;;
-        display:block;
-        border-bottom: 1px solid #a9a923;                 
+        padding: 0.25em 0 0.25em 0;                            
     }
     .skillsBox li {
         margin-left: 0.25rem;
     }
+   
     #messagesForm input {
         width: 50%;
         height: 60%;
@@ -108,6 +120,9 @@
         height:auto;
         font-size: 14px; 
         padding: 0.25rem;
+    }
+    #messagesForm button {
+        width:50%;
     }
     #messages a {
         letter-spacing: 0.5em;
@@ -137,6 +152,10 @@
         padding-left: 2em;
         padding-left: 2em; 
     }
+    #header button {
+        display: none;
+    }
+    /* Navbar is inline */
     #navbar {
         height: 3rem; 
         display: flex;
@@ -146,7 +165,7 @@
     }   
     #navbar a {
         padding-top: 0.5rem;
-        font-size: 14px;        
+        font-size: 16px;        
         display: block;
     }
     #navbar li {
@@ -161,6 +180,9 @@
         margin-left: 5rem;
         margin-right: 1rem;
     }  
+    #projects li:hover {
+        width: 40%;
+    }
     .flex-container {
         display: inline-block;
         margin-right: 1rem;
@@ -175,6 +197,10 @@
         font-size: 16px; 
         padding: 0.25rem;
     }
+    #messagesForm button {
+        width:450px;
+    }
+
     #messages button {
         margin-left: 5em;
         margin-bottom: 1em;

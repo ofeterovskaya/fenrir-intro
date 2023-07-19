@@ -13,6 +13,7 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "css/index.css">
         <link rel = "stylesheet" href = "css/media.css">
+        
     </head>
     <body>
         <!--Wrap div is for entire page exept footer-->
@@ -20,14 +21,17 @@
             <!--Header and navbar-->      
             <nav id = "header">           
                 <h1>Oksana Feterovskaya</h1>
-                <h4>Web developer| Web designer| Web Technologies</h4>                     
-                <ul id = "navbar">
-                    <li><a href = "#about">About</a></li>
-                    <li><a href = "#experience">Experience</a></li>
-                    <li><a href = "#skills">Skills</a></li>
-                    <li><a href = "#connect">Connect</a></li>
-                    <li><a href = "#messagesForm">Leave a Message</a></li>
-                </ul>               
+                <h4>Web developer| Web designer| Web Technologies</h4>                
+                    <button >Menu<i class="fa fa-bars"></i></button>                                  
+                    <ul id = "navbar">   
+                        <div class="dropdown-content"></div>                                        
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#experience">Experience</a></li>
+                        <li><a href = "#skills">Skills</a></li>
+                        <li><a href = "#connect">Connect</a></li>
+                        <li><a href = "#messagesForm">Leave a Message</a></li>                   
+                    </ul>  
+                           
             </nav>
             <!--1st section about me with image-->
             <div class = "container">
@@ -55,6 +59,11 @@
                     <h2>Skills</h2>
                     <ul class = "skillsBox">
                     </ul>
+                <!-- Project section using AJAX and API -->
+                </section>
+                <section id = "projects">
+                    <h2>Projects</h2>
+                    <ul></ul>
                 </section>
                 <!--Connect section using ul li-->
                 <section id = "connect">
