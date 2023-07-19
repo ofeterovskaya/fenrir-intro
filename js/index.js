@@ -79,3 +79,36 @@ const editButton = document.createElement('button');
     messageList.appendChild(newMessage);
     messageForm.reset();
 })
+
+// Projects section by AJAX and JSON
+let githubRequest = new XMLHttpRequest(); 
+githubRequest.open('GET', "https://api.github.com/users/ofeterovskaya/repos");
+githubRequest.send();
+
+githubRequest.addEventListener("load",(e) =>{
+    let repositories = JSON.parse(githubRequest.response);
+    console.log(repositories);
+
+    let projectSection = document.getElementById("projects");
+    let projectList = projectSection.querySelector('ul');
+    for(let i = 0; i < repositories.length; i++) {        
+        const project = document.createElement ('li');
+        project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}  </a>`;
+        projectList.appendChild(project);
+    }
+}
+);
+
+
+
+
+//Hamburger menu bar in progress
+// function myFunction() {      
+//     var x = document.getElementById("myLinks");  
+//     if (x.style.display === "block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "block";
+//     }
+
+// }

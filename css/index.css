@@ -18,10 +18,11 @@ a {
     text-decoration: none;
 }
 h2 {
-    color: #b0b015;;
-    font-family: 'Neuton', serif;
-    line-height: 200%;
+    color: #b0b015;
+    font-family: 'Neuton', serif;  
     margin-bottom: 1rem;    
+    font-size: 2em;
+    text-shadow: 2px 1.5px #b9b5b5 ;
 }
 /* header and navigation bar*/
 /*sticky nav bar*/
@@ -30,19 +31,17 @@ h2 {
     top: 0;
     width: 100%;
 }
-nav {
+#header {
     background-color: #e1e16b;
 }
 #header h1, h4 {
     font-family: 'Noto Serif', serif;   
     text-align: center;    
 }
-#navbar{   
+#navbar {   
     background-color:  #555653;    
 }
-#navbar li {
-    border-left: 1px solid #a9a923;
-    display: inline;
+#navbar li {    
     width: 100%;
  }
 #navbar a {   
@@ -78,38 +77,49 @@ color: #f9f92f;
     color:  #333333;  
 }  
 /*Skills section*/
-.skillsBox li{
+.skillsBox li {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0.5rem;
+    padding: 0.5rem 3em;
     border: 1px solid #a9a923;  
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 5px#bfbfbf;
     width: 10em;
-    text-align: center;    
+      
 }
-.skillsBox li:hover{
+.skillsBox li:hover {
     background-color: #555653;
     color:#e1e16b;
 }
+/* Project section written by AJAX/JSON */
+#projects li {
+    list-style-type: none;
+    margin-left: 0.5em;
+    font-style: italic;
+    text-transform: uppercase;
+}
+#projects li:hover {
+    background-color:#5f5e5e;
+    color:#e1e16b;
+   
+}
 /*Connect section*/
-
-#connect li{
+#connect li {
     list-style: none;
     padding: 0.5rem;
 }
-a{
+a {
     text-decoration: none;
     color: #000000;
 }
-a:hover{
+a:hover {
     background-color: #555653;
     color:#e1e16b;
 }
 /*Leave a message form*/
-#messagesForm form{
+#messagesForm form {
     margin-left: 2%;
 }
 #messagesForm input {       
@@ -123,23 +133,25 @@ a:hover{
     margin-bottom: 0.5em; 
     padding: 0.5rem;      
 }
-.inputMessage{
+.inputMessage {
     display: block;
     margin-bottom: 1rem;
     max-width: 100%;
     width: 100%;
 }
-#messagesForm button{
+#messagesForm button {
     display: block;
-    background-color: #e1e16b;;
+    background-color: #e1e16b;
     border-radius:5px;
     border: 1px solid; 
     margin-top: 0.5em;
-    font-size: 16px;
-    padding: 0.5em;         
+    font-size: 20px;
+   
+    padding: 0.5em; 
+    box-shadow: 5px 5px 5px#bfbfbf;       
 }   
 /*Messages section*/
-#messagesForm button:hover{
+#messagesForm button:hover {
     background-color: #555653;
     color:#e1e16b;
 }
@@ -150,11 +162,11 @@ a:hover{
     width: 25%;
     float:left;
 }
-#messages button{
+#messages button {
     border-radius:5px;
     font-size: 14px;     
 }
-#messages button:hover{
+#messages button:hover {
     background-color: #5f5e5e;
     color:#f1f10b ;
 } 
