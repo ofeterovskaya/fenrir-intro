@@ -13,32 +13,34 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "css/index.css">
         <link rel = "stylesheet" href = "css/media.css">
-        
+                
     </head>
     <body>
         <!--Wrap div is for entire page exept footer-->
         <div class = "wrap"> 
-            <!--Header and navbar-->      
+            <!-- Header and navbar-->      
             <nav id = "header">           
                 <h1>Oksana Feterovskaya</h1>
-                <h4>Web developer| Web designer| Web Technologies</h4>                
-                    <button >Menu<i class="fa fa-bars"></i></button>                                  
-                    <ul id = "navbar">   
-                        <div class="dropdown-content"></div>                                        
-                        <li><a href = "#about">About</a></li>
-                        <li><a href = "#experience">Experience</a></li>
-                        <li><a href = "#skills">Skills</a></li>
-                        <li><a href = "#connect">Connect</a></li>
-                        <li><a href = "#messagesForm">Leave a Message</a></li>                   
-                    </ul>  
-                           
+                <h4>Web developer| Web designer| Web Technologies</h4>
+                <div class="dropdown">
+                    <button class = "menuButton">Menu<i class="fa fa-bars"></i></button>  
+                    <div class="dropdown-content">                                                
+                        <ul id = "navbar">                                                            
+                            <li><a href = "#about">About</a></li>
+                            <li><a href = "#experience">Experience</a></li>
+                            <li><a href = "#skills">Skills</a></li>
+                            <li><a href = "#connect">Connect</a></li>
+                            <li><a href = "#messagesForm">Leave a Message</a></li>                   
+                        </ul>
+                    </div>   
+                </div>        
             </nav>
-            <!--1st section about me with image-->
+               <!--1st section about me with image-->
             <div class = "container">
                 <section id = "section1">
                     <h2 id = "about">About:</h2>
                     <img src = "img/OksanaF.jpg" alt = "Oksana in a green dress">
-                        <p>Hi I'm Oksana. <em> I really love programming and creating websites</em>. It is a pleasure for me to create projects for you. </p>
+                        <p class = "one">Hi I'm Oksana. <em> I really love programming and creating websites</em>. It is a pleasure for me to create projects for you. </p>
                         <p>My passion is listening to people and working with them to convert their plans and ideas to reality.</p>
                         <p>Also, I put my attention into every single detail, and making your dreams about websites come true!<br></p>
                         <p> Knowing the principles of UI/UX is helping me to create user friendly designs for my coding projects.</p>
@@ -69,7 +71,7 @@
                 <section id = "connect">
                     <h2>Connect:</h2>
                     <ul >
-                        <li><strong>Gmail:</strong> fetter.oksana@gmail.com </li>
+                        <li><strong>Gmail:</strong><a href="mailto:fetter.oksana@gmail.com">   fetter.oksana@gmail.com </a></li>
                         <li><strong>GitHub:</strong><a href = " https://github.com/ofeterovskaya" target = "_blank"> https://github.com/ofeterovskaya </a></li>
                         <li><strong>Twitter:</strong><a href = " https://twitter.com/OksanaFetter" target = "_blank"> https://twitter.com/OksanaFetter </a></li>
                         <li><strong>LinkedIn:</strong><a href = " https://www.linkedin.com/in/oksana-feterovskaya-037587138/" target = "_blank"> https://www.linkedin.com/in/oksana-feterovskaya-037587138/ </a></li>

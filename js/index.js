@@ -56,13 +56,18 @@ const messageList = messageSection.querySelector('ul');
 const newMessage= document.createElement ('li');
 newMessage.innerHTML = `<a href = "mailto:${email}"> ${name} </a>
     <span>wrote: ${messages}</span>`;
+
 //create Remove button
 const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
-    removeButton.type = 'button';
-    removeButton.addEventListener('click', (e) => {
+        removeButton.innerText = 'remove';
+        removeButton.type = 'button';
+        removeButton.addEventListener('click', (e) => {
         const entry = removeButton.parentNode;
         entry.remove();
+// hide Message section till message is created and submit button pressed 
+        if (messageList.childElementCount === 0) {
+            messageSection.style.display = "none";
+        }
     });
   
 //create Edit button
@@ -77,38 +82,36 @@ const editButton = document.createElement('button');
     newMessage.appendChild(removeButton);
     newMessage.appendChild(editButton);
     messageList.appendChild(newMessage);
+    messageSection.style.display = "block";
     messageForm.reset();
 })
 
 // Projects section by AJAX and JSON
-let githubRequest = new XMLHttpRequest(); 
-githubRequest.open('GET', "https://api.github.com/users/ofeterovskaya/repos");
-githubRequest.send();
+// let githubRequest = new XMLHttpRequest(); 
+// githubRequest.open('GET', "https://api.github.com/users/ofeterovskaya/repos");
+// githubRequest.send();
 
-githubRequest.addEventListener("load",(e) =>{
-    let repositories = JSON.parse(githubRequest.response);
-    console.log(repositories);
-
-    let projectSection = document.getElementById("projects");
-    let projectList = projectSection.querySelector('ul');
-    for(let i = 0; i < repositories.length; i++) {        
-        const project = document.createElement ('li');
-        project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}  </a>`;
-        projectList.appendChild(project);
-    }
-}
-);
-
-
-
-
-//Hamburger menu bar in progress
-// function myFunction() {      
-//     var x = document.getElementById("myLinks");  
-//     if (x.style.display === "block") {
-//         x.style.display = "none";
-//     } else {
-//         x.style.display = "block";
+// githubRequest.addEventListener("load",(e) =>{
+//     let repositories = JSON.parse(githubRequest.response);
+//     let projectSection = document.getElementById("projects");
+//     let projectList = projectSection.querySelector('ul');
+//     for(let i = 0; i < repositories.length; i++) {        
+//         const project = document.createElement ('li');
+//         project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}  </a>`;
+//         projectList.appendChild(project);
 //     }
-
 // }
+// );
+
+//FETCH API 
+fetch ("https://api.github.com/users/ofeterovskaya/repos")
+    .then (response => response.json())
+    .then ((repositories) =>{
+        let projectSection = document.getElementById("projects");
+        let projectList = projectSection.querySelector('ul');
+        for(let i = 0; i < repositories.length; i++) {        
+            const project = document.createElement ('li');
+            project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}  </a>`;
+            projectList.appendChild(project);
+        }
+    })

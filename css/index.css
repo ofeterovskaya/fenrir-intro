@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    letter-spacing: .1em;
 }
 body {
     color: #333333;
@@ -14,16 +15,23 @@ body {
     padding-left: 1em; 
     align-content: center;
 }
+p.one{
+    text-indent: 20px;
+}
 a {
     text-decoration: none;
+    color:#333333;
+}
+h1 {
+    word-spacing: 10px;
 }
 h2 {
     color: #b0b015;
     font-family: 'Neuton', serif;  
     margin-bottom: 1rem;    
     font-size: 2em;
-    text-shadow: 2px 1.5px #b9b5b5 ;
 }
+    
 /* header and navigation bar*/
 /*sticky nav bar*/
 .sticky {
@@ -81,13 +89,12 @@ color: #f9f92f;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0.5rem 3em;
+    padding: 0.5rem 2em;
     border: 1px solid #a9a923;  
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 5px#bfbfbf;
-    width: 10em;
-      
+    width: 10em;      
 }
 .skillsBox li:hover {
     background-color: #555653;
@@ -98,23 +105,24 @@ color: #f9f92f;
     list-style-type: none;
     margin-left: 0.5em;
     font-style: italic;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
-#projects li:hover {
-    background-color:#5f5e5e;
-    color:#e1e16b;
-   
+#projects a:hover {
+    background-color:#555653;   
+    color:#f1f10b;  
 }
 /*Connect section*/
 #connect li {
     list-style: none;
     padding: 0.5rem;
+    
 }
-a {
+#connect a {
     text-decoration: none;
     color: #000000;
+    margin-left: 1em;
 }
-a:hover {
+#connect a:hover {
     background-color: #555653;
     color:#e1e16b;
 }
@@ -125,7 +133,8 @@ a:hover {
 #messagesForm input {       
     border-radius:5px;
     border: 1px solid; 
-    margin-bottom: 0.5em;    
+    margin-bottom: 1em;   
+    margin-top: 0.75em;     
 }
 #messagesForm textarea {
     border-radius:5px;
@@ -136,6 +145,7 @@ a:hover {
 .inputMessage {
     display: block;
     margin-bottom: 1rem;
+    margin-top: 0.75em;
     max-width: 100%;
     width: 100%;
 }
@@ -145,8 +155,7 @@ a:hover {
     border-radius:5px;
     border: 1px solid; 
     margin-top: 0.5em;
-    font-size: 20px;
-   
+    font-size: 20px;   
     padding: 0.5em; 
     box-shadow: 5px 5px 5px#bfbfbf;       
 }   
@@ -155,6 +164,9 @@ a:hover {
     background-color: #555653;
     color:#e1e16b;
 }
+#messages {
+    display: none;
+}
 #messages a {
     font-weight: bold;    
     display: flex;
@@ -162,9 +174,14 @@ a:hover {
     width: 25%;
     float:left;
 }
+#messages ul {
+    list-style-type: none;
+}
 #messages button {
     border-radius:5px;
-    font-size: 14px;     
+    font-size: 14px; 
+    background-color: #e1e16b;
+    float: right;        
 }
 #messages button:hover {
     background-color: #5f5e5e;
@@ -178,6 +195,7 @@ footer {
     color: #333333;
     font-weight: bold;
     padding: 1em 0;
+    margin-top: 2em;
 }
 
 
