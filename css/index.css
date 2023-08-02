@@ -131,6 +131,7 @@ color: #f9f92f;
     text-align: center;
     box-shadow: 5px 5px 5px#bfbfbf;   
 } 
+/* Use autoprefixer */
 #projects li:hover {
     opacity: 50%;
     -webkit-box-shadow: 5px 5px 5px#272624;
