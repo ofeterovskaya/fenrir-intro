@@ -26,7 +26,7 @@ h1 {
     word-spacing: 10px;
 }
 h2 {
-    color: #b0b015;
+    color: #84841e;
     font-family: 'Neuton', serif;  
     margin-bottom: 1rem;    
     font-size: 2em;
@@ -60,8 +60,19 @@ color: #f9f92f;
     box-shadow: 10px 5px 10px#8f8f8f;
     margin: 0.5em;
     border-radius: 50px;
-    margin-right: 50px;
+    margin-right: 50px; 
+    transition: 3s;
+    z-index: -1;
 }
+#section1 img:hover{
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+ }
 #experience , #section1, #skills, #connect, #messagesForm, #messages{
     padding-top: 3rem; 
 }
@@ -99,33 +110,65 @@ color: #f9f92f;
 .skillsBox li:hover {
     background-color: #555653;
     color:#e1e16b;
+    -webkit-transform:scale(1.2);
+    z-index: -1;
 }
 /* Project section written by AJAX/JSON */
-#projects li {
+#projects ul {    
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;    
+}
+#projects li {    
     list-style-type: none;
     margin-left: 0.5em;
-    font-style: italic;
-    text-transform: uppercase;    
+    text-transform: uppercase;   
+    border: 1px double #a9a923;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 5px 5px 5px#bfbfbf;   
+} 
+#projects li:hover {
+    opacity: 50%;
+    -webkit-box-shadow: 5px 5px 5px#272624;
+            box-shadow: 5px 5px 5px#272624; 
+    -webkit-transform:scale(0.8);
+    filter: alpha(opacity=50); /* For IE8 and earlier */ 
 }
-#projects a:hover {
-    background-color:#555653;   
-    color:#f1f10b;  
+#projects img {
+    width: 50%;
+    height: auto;
 }
 /*Connect section*/
 #connect li {
     list-style: none;
     padding: 0.5rem;
-    
 }
 #connect a {
     text-decoration: none;
     color: #000000;
     margin-left: 1em;
+    overflow-wrap: break-word;
 }
 #connect a:hover {
     background-color: #555653;
     color:#e1e16b;
 }
+#connect i {
+   margin-right: 2em;
+}
+#connect i:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color:#a9a923;
+}
+/* .fa:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+} */
 /*Leave a message form*/
 #messagesForm form {
     margin-left: 2%;
@@ -157,7 +200,8 @@ color: #f9f92f;
     margin-top: 0.5em;
     font-size: 20px;   
     padding: 0.5em; 
-    box-shadow: 5px 5px 5px#bfbfbf;       
+    box-shadow: 5px 5px 5px#bfbfbf;  
+    cursor: pointer;
 }   
 /*Messages section*/
 #messagesForm button:hover {
@@ -167,21 +211,29 @@ color: #f9f92f;
 #messages {
     display: none;
 }
+#messages li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    flex-direction: row;
+}
 #messages a {
     font-weight: bold;    
-    display: flex;
     flex-wrap: wrap;
-    width: 25%;
-    float:left;
+    /* width: 25%; */
+    float:left; 
+    margin-right: 1em;   
 }
 #messages ul {
     list-style-type: none;
 }
 #messages button {
     border-radius:5px;
-    font-size: 14px; 
+    font-size: 12px; 
     background-color: #e1e16b;
-    float: right;        
+    float: right;  
+    box-shadow: 5px 5px 5px#bfbfbf;     
 }
 #messages button:hover {
     background-color: #5f5e5e;

@@ -1,249 +1,270 @@
-@media (min-width: 320px) {
-.wrap {
-    min-height: calc(100vh - 89px);
-}
-.container {
-    margin: 0 auto;
-    font-size: 16px;
-    max-width: 650px;     
-}
-#header h1, h4 {
-    font-size: 14px;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-}
-#section1 img {    
-    width: 50%;  
-    float: center;
-    border-radius: 25px;
-    margin-left: 25%; 
-    height: auto;      
-}
-/* Dropdown menu for small devices */
-.menuButton {
-    color: #f9f92f;  
-    background-color:  #555653; 
-    /* width: 100%; */
-    height: 3em;
-    text-align: left;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 16px;
-}
-.dropdown button i {
-    padding-left: 1em;
-}
-.dropdown {
-position: relative;
-display: block;
-width: 30%;
-}
-.dropdown-content {
-display: none;
-position: absolute;
-border-bottom: 1px solid #a9a923; 
-width: 100%;     
-}
-.dropdown-content a {
-padding: 10px;
-text-decoration: none;
-display: block;
-border-bottom: 1px solid #a9a923; 
-}
-.dropdown-content li:hover {
-    background-color: #f2f2f2ea;
-}
-#navbar a:hover  {
-    color:  #333333;
-}
-.dropdown:hover .dropdown-content {
+@media (min-width: 280px) {
+    .wrap {
+        min-height: calc(100vh - 89px);
+    }
+    .container {
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 650px;     
+    }
+    #header h1, h4 {
+        font-size: 14px;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+    }
+    #header {
+        width: 100%;
+    }
+    #section1 img {    
+        width: 35%;  
+        border-radius: 25px;
+        margin-left: 30%; 
+        height: auto;  
+    }
+    /* Dropdown menu for small devices */
+    .menuButton {
+        color: #f9f92f;  
+        background-color:  #555653; 
+        height: 3em;
+        text-align: left;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 16px;
+    }
+    .dropdown button i {
+        padding-left: 1em;
+    }
+    .dropdown {
+    position: relative;
     display: block;
-}
-.grid-container p {
-    padding: 0.5rem;
-    margin: 0.25rem;
-}
-.skillsBox li {
-    margin-left: 0.25rem;
-}
-#messagesForm input {
-    width: 80%;
-    height: 3em;
-    font-size: 12px; 
-    padding: 0.25rem;
-}
-#messagesForm textarea {
-    width: 80%;
-    height:5em;
-    font-size: 12px; 
-    padding: 0.25rem;
-}
-#messagesForm button {
-    width:80%;
-}
-footer {
-    font-size: 14px;
-}
-#message a {
-    letter-spacing: 0;
-    width: 5%;
-}
-#messages button {
-    margin-left: 2em;
-    font-size: 12px;
-    padding: 0.25rem;
-    width: 15%;
-}
-.social a {
-    padding: 0.5em;      
-}
+    width: 41%;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    border-bottom: 1px solid #a9a923; 
+    width: 100%;     
+    }
+    .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #a9a923; 
+    }
+    .dropdown-content li:hover {
+        background-color: #f2f2f2ea;
+    }
+    #navbar a:hover  {
+        color:  #333333;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .grid-container p {
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
+    .skillsBox li {
+        margin-left: 0.25rem;
+    }
+    #projects ul {    
+        display:  inline-block;
+       margin-right: 1em;
+    }
+    #projects li { 
+        margin-bottom:  2em;         
+        padding-top: 0.5em;
+        font-size: 12px;
+    } 
+    #messagesForm input {
+        width: 80%;
+        height: 3em;
+        font-size: 12px; 
+        padding: 0.25rem;
+    }
+    #messagesForm textarea {
+        width: 80%;
+        height:5em;
+        font-size: 12px; 
+        padding: 0.25rem;
+    }
+    #messagesForm button {
+        width:80%;
+    }
+    #message a {
+        letter-spacing: 0;
+    }
+    #messages button {
+        margin-left:2em;
+        font-size: 10px;
+        padding: 0.25rem;
+        width: 20%;
+    }
+    footer {
+        font-size: 14px;
+    }
+    .social a {
+        padding: 0.5em;      
+    }
 } 
 
 @media (min-width: 651px) { 
-.container {
-    font-size: 18px;
-    padding-right: 2em;
-    padding-left: 2em; 
-    max-width: 1024px;
-}
-#header h1, h4 {
-    font-size: 20px;
-}
-/* Dropdown menu for bigger devices */
-.menuButton {
-    display: none;
-}
-/* Navbar is inline */
-.dropdown {
-    display: inline-block;
-    width: 100%;
-}
-.dropdown-content {
-    position: relative;
-    display: inline-block;      
-}
-#navbar {
-    height: 4rem; 
-    display: flex;   
-    flex-wrap: nowrap;  
-    text-align: center;
-    width: 100%;
-} 
-#navbar a { 
-    display: inline-block; 
-    padding: 1rem;
-    margin-left:0;    
-    align-items:center;
-    font-size: 18px;        
-    border-bottom: none;
-    text-decoration: none;
-    width: 100%;
-}
-#navbar li {
-    border-left: 1px solid #dddd32;
-    display: inline;
-}
-#navbar li:last-child {
-    align-self: center;
-}
-#navbar li:hover {
-    background-color:#f2f2f2ea;
-    color:  #333333; 
-    font-size: 16px;
-}
-#section1 img {
-    width: 20%;
-    float: right;
-    margin-left: 5%;
-    height: auto;      
-}
-.skillsBox li {
-    margin-left: 0.25rem;
-}
-#messagesForm input {
-    width: 80%;
-    height: 3em;
-    font-size: 12px; 
-    padding: 0.25rem;
-    font-size: 18px;
-}
-#messagesForm textarea {
-    width: 80%;
-    height: 5em;
-    font-size: 14px; 
-    padding: 0.25rem;
-    font-size: 18px;
-}
-#messagesForm button {
-    width:80%;
-}
-#messages a {
-    letter-spacing: 0.5em;
-}
-#messages button {
-    margin-left: 4em;
-    margin-bottom: 2em;
-    font-size: 14px;
-    padding: 0.5rem;
-}
-.social a {
-    float: right;
-    margin-right: 1em;
-    padding: 0.25em;
-}
-footer p {
-margin-left: 10rem;
-}
+    .container {
+        font-size: 18px;
+        padding-right: 2em;
+        padding-left: 2em; 
+        max-width: 1024px;
+    }
+    #header h1, h4 {
+        font-size: 20px;
+    }
+    /* Dropdown menu for bigger devices */
+    .menuButton {
+        display: none;
+    }
+    /* Navbar is inline */
+    .dropdown {
+        display: inline-block;
+        width: 100%;
+    }
+    .dropdown-content {
+        position: relative;
+        display: inline-block;      
+    }
+    #navbar {
+        height: 4rem; 
+        display: flex;   
+        flex-wrap: nowrap;  
+        text-align: center;
+        width: 100%;
+    } 
+    #navbar a { 
+        display: inline-block; 
+        padding: 1rem;
+        margin-left:0;    
+        align-items:center;
+        font-size: 18px;        
+        border-bottom: none;
+        text-decoration: none;
+        width: 100%;
+    }
+    #navbar li {
+        border-left: 1px solid #dddd32;
+        display: inline;
+    }
+    #navbar li:last-child {
+        align-self: center;
+    }
+    #navbar li:hover {
+        background-color:#f2f2f2ea;
+        color:  #333333; 
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #section1 img {
+        width: 20%;
+        float: right;
+        margin-left: 5%;
+        height: auto; 
+    }
+    #projects ul {    
+        display: grid;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-columns: auto auto auto;    
+    }
+    .skillsBox li {
+        margin-left: 0.25rem;
+    }
+    #messagesForm input {
+        width: 80%;
+        height: 3em;
+        font-size: 12px; 
+        padding: 0.25rem;
+        font-size: 18px;
+    }
+    #messagesForm textarea {
+        width: 80%;
+        height: 5em;
+        font-size: 14px; 
+        padding: 0.25rem;
+        font-size: 18px;
+    }
+    #messagesForm button {
+        width:80%;
+    }
+    #messages a {
+        letter-spacing: 0.5em;
+        margin-right: 1em;
+        
+    }
+    #messages button {
+        margin-left: 4em;
+        margin-bottom: 2em;
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+    .social a {
+        float: right;
+        margin-right: 1em;
+        padding: 0.25em;
+    }
+    footer p {
+    margin-left: 10rem;
+    }
 }
 @media (min-width: 1025px) {
-.container p {
-    padding-left: 2%;
-}
-.container {
-    width: 80%;
-    font-size: 16px;
-    padding-left: 2em;
-    padding-left: 2em; 
-}
-.menuButton {
-    display: none;
-}
-#navbar {
-    height: 3rem; 
-} 
-#navbar a { 
-    padding-top: 0.5rem;
-    font-size: 16px;        
-}
-.grid-container {
-    padding-left: 2%;
-}
-.skillsBox li {
-    margin-left: 5rem;
-    margin-right: 1rem;
-}  
-.flex-container {
-    display: inline-block;
-    margin-right: 1rem;
-}
-#messagesForm input {
-    width: 100%;         
-    font-size: 16px; 
-    padding: 0.5rem;        
-}
-#messagesForm textarea {
-    width: 450px;
-    font-size: 16px; 
-    padding: 0.25rem;
-}
-#messagesForm button {
-    width:450px;
-}
-#messages button {
-    margin-left: 2em;
-    margin-bottom: 0em;
-}
-footer {
-    font-size: 20px;
-}
+    .container p {
+        padding-left: 2%;
+    }
+    .container {
+        width: 80%;
+        font-size: 16px;
+        padding-left: 2em;
+        padding-left: 2em; 
+    }
+    .menuButton {
+        display: none;
+    }
+    #navbar {
+        height: 3rem; 
+    } 
+    #navbar a { 
+        padding-top: 0.5rem;
+        font-size: 16px;        
+    }
+    .grid-container {
+        padding-left: 2%;
+    }
+    .skillsBox li {
+        margin-left: 5rem;
+        margin-right: 1rem;
+    }  
+    .flex-container {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    #messagesForm input {
+        width: 100%;         
+        font-size: 16px; 
+        padding: 0.5rem;        
+    }
+    #messagesForm textarea {
+        width: 450px;
+        font-size: 16px; 
+        padding: 0.25rem;
+    }
+    #messagesForm button {
+        width:450px;
+    }
+    #messages a {
+        margin-right: 15%;
+    }
+    #messages button {
+        margin-left: 2em;
+        margin-bottom: 0em;
+    }
+    footer {
+        font-size: 20px;
+    }
 }
