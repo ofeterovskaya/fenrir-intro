@@ -67,7 +67,7 @@ const removeButton = document.createElement('button');
 // hide Message section till message is created and submit button pressed 
         if (messageList.childElementCount === 0) {
             messageSection.style.display = "none";
-            console.log(messageList.childElementCount)
+            // console.log(messageList.childElementCount)
         }
     });
   
@@ -105,15 +105,39 @@ const editButton = document.createElement('button');
 // );
 
 //FETCH API 
+// fetch ("https://api.github.com/users/ofeterovskaya/repos")
+//     .then (response => response.json())
+//     .then ((repositories) => {
+//         let projectSection = document.getElementById("projects");
+//         let projectList = projectSection.querySelector('ul');
+//         for (let i = 0; i <repositories.length; i++) {        
+//             const project = document.createElement ('li');
+//             project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}</a>`;
+//             projectList.appendChild(project);
+//         }
+//     })
+//     .catch((error) =>
+//     console.log("Looks like was a problem with API request!", error)
+//   );
+
+//FETCH API 
 fetch ("https://api.github.com/users/ofeterovskaya/repos")
     .then (response => response.json())
-    .then ((repositories) =>{
+    .then ((repositories) => {
         let projectSection = document.getElementById("projects");
         let projectList = projectSection.querySelector('ul');
-        for(let i = 0; i <repositories.length; i++) {        
+        for (let i = 0; i <repositories.length; i++) {        
             const project = document.createElement ('li');
-            project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}</a>`;
+            project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}  <br> <img src = "img/${repositories[i].name}.png"></a>`;
             projectList.appendChild(project);
         }
-    }
-    )
+    })
+    // I'm still working on this part
+    // .catch(error => {
+    //     console.log("Error:", error);
+    //     const errorMessage = document.createElement('p');
+    //     errorMessage.textContent = 'Oops! Something went wrong. Please try again later.';
+    //     document.body.appendChild(errorMessage);
+    // });
+  
+   

@@ -26,7 +26,7 @@ h1 {
     word-spacing: 10px;
 }
 h2 {
-    color: #b0b015;
+    color: #84841e;
     font-family: 'Neuton', serif;  
     margin-bottom: 1rem;    
     font-size: 2em;
@@ -66,10 +66,13 @@ color: #f9f92f;
 }
 #section1 img:hover{
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    animation-timing-function: ease-out;
-    animation: mymove 5s infinite;
-}
+    -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+ }
 #experience , #section1, #skills, #connect, #messagesForm, #messages{
     padding-top: 3rem; 
 }
@@ -111,15 +114,33 @@ color: #f9f92f;
     z-index: -1;
 }
 /* Project section written by AJAX/JSON */
-#projects li {
+#projects ul {    
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;    
+}
+#projects li {    
     list-style-type: none;
     margin-left: 0.5em;
-    text-transform: uppercase;  
-    padding: 6px; 
+    text-transform: uppercase;   
+    border: 1px double #a9a923;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 5px 5px 5px#bfbfbf;   
 } 
-#projects a:hover {
-    background-color:#555653;   
-    color:#f1f10b;  
+#projects li:hover {
+    opacity: 50%;
+    -webkit-box-shadow: 5px 5px 5px#272624;
+            box-shadow: 5px 5px 5px#272624; 
+    -webkit-transform:scale(0.8);
+    filter: alpha(opacity=50); /* For IE8 and earlier */ 
+}
+#projects img {
+    width: 50%;
+    height: auto;
 }
 /*Connect section*/
 #connect li {

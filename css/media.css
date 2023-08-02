@@ -67,12 +67,15 @@
     .skillsBox li {
         margin-left: 0.25rem;
     }
-    #projects li:hover {
-        margin-left: 1em;
-        -webkit-transform: scale(1.1);
-        transition: 2s;
-        z-index: -1;
+    #projects ul {    
+        display:  inline-block;
+       margin-right: 1em;
     }
+    #projects li { 
+        margin-bottom:  2em;         
+        padding-top: 0.5em;
+        font-size: 12px;
+    } 
     #messagesForm input {
         width: 80%;
         height: 3em;
@@ -156,6 +159,7 @@
         background-color:#f2f2f2ea;
         color:  #333333; 
         font-size: 16px;
+        font-weight: bold;
     }
     #section1 img {
         width: 20%;
@@ -163,11 +167,11 @@
         margin-left: 5%;
         height: auto; 
     }
-    #projects li:hover {
-        margin-left: 2em;
-        -webkit-transform: scale(1.1);
-        transition: 2s;
-        z-index: -1;
+    #projects ul {    
+        display: grid;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-columns: auto auto auto;    
     }
     .skillsBox li {
         margin-left: 0.25rem;
@@ -239,11 +243,6 @@
     .flex-container {
         display: inline-block;
         margin-right: 1rem;
-    }
-    #projects li:hover {
-        margin-left: 2em;
-        -webkit-transform: scale(1.0);
-        transition: 3s;
     }
     #messagesForm input {
         width: 100%;         
