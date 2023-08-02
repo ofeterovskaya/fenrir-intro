@@ -105,22 +105,6 @@ const editButton = document.createElement('button');
 // );
 
 //FETCH API 
-// fetch ("https://api.github.com/users/ofeterovskaya/repos")
-//     .then (response => response.json())
-//     .then ((repositories) => {
-//         let projectSection = document.getElementById("projects");
-//         let projectList = projectSection.querySelector('ul');
-//         for (let i = 0; i <repositories.length; i++) {        
-//             const project = document.createElement ('li');
-//             project.innerHTML += `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name}</a>`;
-//             projectList.appendChild(project);
-//         }
-//     })
-//     .catch((error) =>
-//     console.log("Looks like was a problem with API request!", error)
-//   );
-
-//FETCH API 
 fetch ("https://api.github.com/users/ofeterovskaya/repos")
     .then (response => response.json())
     .then ((repositories) => {
