@@ -166,10 +166,6 @@ color: #f9f92f;
     transform: scaleX(-1);
     color:#a9a923;
 }
-/* .fa:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-} */
 /*Leave a message form*/
 #messagesForm form {
     margin-left: 2%;
