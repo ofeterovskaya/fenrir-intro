@@ -17,7 +17,7 @@ function myFunction() {
   }
 }
 //add skills section
-const skills = ['HTML', 'CSS', 'JavaScript','Git Hub', 'UI/UX','Wordpress','Adobe Visual', 'Adobe Photoshop', 'Adobe Illustrator', 'React', 'API fetch'];
+const skills = ['HTML', 'CSS', 'JavaScript','Git Hub', 'UI/UX','Wordpress','Adobe Visual', 'Adobe Photoshop', 'Adobe Illustrator', 'React', 'Next.js','API fetch',  'MongoDB', 'Postman',  'Node.js', 'Vercel', 'Figma', 'Canva', 'Bootstrap', 'MUI'];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector('ul');
 for (let i = 0; i <skills.length; i++){
